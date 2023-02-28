@@ -1,4 +1,3 @@
-
 name: GitHub Actions Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
@@ -16,4 +15,4 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
-      - run: echo "🍏 Myroslav is ${{ job.status }}."
+      - run: echo "🍏 This job's status is ${{ job.status }}."
